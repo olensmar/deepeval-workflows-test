@@ -3,7 +3,7 @@ from deepeval.test_case import LLMTestCase
 from deepeval.metrics import AnswerRelevancyMetric
 
 def test_answer_relevancy():
-    answer_relevancy_metric = AnswerRelevancyMetric(threshold=0.7, model="gpt-3.5-turbo")
+    answer_relevancy_metric = AnswerRelevancyMetric(threshold=0.9, model="gpt-3.5-turbo")
     test_case = LLMTestCase(
         input="How can I use Testkube to test APIs?",
         actual_output="Testkube is a tool that allows you to write and execute automated tests for APIs. Here's how you can use Testkube to test APIs: " +
